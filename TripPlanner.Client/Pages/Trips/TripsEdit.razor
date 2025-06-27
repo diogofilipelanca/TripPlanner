@@ -1,0 +1,30 @@
+﻿@using TripPlanner.Client.Enums
+@using TripPlanner.Client.Models
+@attribute [Route(PageRoutes.TripsCreate)]
+@attribute [Route($"{PageRoutes.TripsEdit}/{{Id}}")]
+@rendermode InteractiveAuto
+
+<h3>TripsEdit.razor</h3>
+
+<RadzenTemplateForm TItem="@Trip" Data="@trip" Submit="@OnSubmit">
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenFormField Text="Origin">
+            <RadzenDropDown Data="@cities" @bind-Value="@trip.Origin" TValue="string" ValueProperty="Name" TextProperty="Name" />
+        </RadzenFormField>
+        <RadzenFormField Text="Destination">
+            <RadzenDropDown Data="@cities" @bind-Value="@trip.Destination" TValue="string" ValueProperty="Name" TextProperty="Name" />
+        </RadzenFormField>
+        <RadzenFormField Text="Time">
+            <RadzenNumeric @bind-Value="@trip.Time" />
+        </RadzenFormField>
+        <RadzenFormField Text="Price">
+            <RadzenNumeric @bind-Value="@trip.Price" />
+        </RadzenFormField>
+        <RadzenFormField Text="Emissions">
+            <RadzenNumeric @bind-Value="@trip.Emissions" />
+        </RadzenFormField>
+    </RadzenRow>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenButton ButtonType="@ButtonType.Submit" Text="Submit" />
+    </RadzenRow>
+</RadzenTemplateForm>

@@ -1,0 +1,18 @@
+﻿@using TripPlanner.Client.Enums
+@using TripPlanner.Client.Models
+@attribute [Route(PageRoutes.CitiesCreate)]
+@attribute [Route($"{PageRoutes.CitiesEdit}/{{Id}}")]
+@rendermode InteractiveAuto
+
+<h3>CitiesEdit</h3>
+
+<RadzenTemplateForm TItem="@City" Data="@city" Submit="@OnSubmit">
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenFormField Text="City Name">
+            <RadzenTextBox @bind-Value="@city.Name" />
+        </RadzenFormField>
+    </RadzenRow>
+    <RadzenRow AlignItems="AlignItems.Center">
+        <RadzenButton ButtonType="@ButtonType.Submit" Text="Submit" />
+    </RadzenRow>
+</RadzenTemplateForm>

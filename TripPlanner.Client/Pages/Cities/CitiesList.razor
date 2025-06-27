@@ -1,0 +1,22 @@
+﻿@using TripPlanner.Client.Enums
+@using TripPlanner.Client.Models
+@attribute [Route(PageRoutes.CitiesList)]
+@rendermode InteractiveAuto
+
+<h3>CitiesList</h3>
+
+<RadzenButton Click="@AddCity">Add City</RadzenButton>
+
+<RadzenDataGrid Data="@cities" @ref="Grid">
+    <Columns>
+        <RadzenDataGridColumn Property="@nameof(City.Name)" Title="Name" />
+        <RadzenDataGridColumn Context="city" Width="150px" Title="Actions">
+            <Template Context="city">
+                <RadzenButton Icon="delete"
+                              ButtonStyle="ButtonStyle.Danger"
+                              Size="ButtonSize.Medium"
+                              Click="@(() => DeleteCity(city))" />
+            </Template>
+        </RadzenDataGridColumn>
+    </Columns>
+</RadzenDataGrid> 

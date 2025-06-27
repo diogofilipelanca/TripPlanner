@@ -1,0 +1,18 @@
+﻿@using TripPlanner.Client.Enums
+@using TripPlanner.Client.Models
+@attribute [Route(PageRoutes.TripsList)]
+@rendermode InteractiveAuto
+
+<h3>TripsList</h3>
+
+<RadzenButton Click="@AddTrip">Add Trip</RadzenButton>
+
+<RadzenDataGrid Data="@trips">
+    <Columns>
+        <RadzenDataGridColumn Property="@nameof(Trip.Origin)" Title="Origin" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Destination)" Title="Destination" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Time)" Title="Time" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Price)" Title="Price" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Emissions)" Title="Emissions" />
+    </Columns>
+</RadzenDataGrid>
