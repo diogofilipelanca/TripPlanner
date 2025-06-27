@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AkcR1rsQivg=",
+  "dgSpecHash": "ccTYEaOqdEw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
+  "projectFilePath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\itzdi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.8\\microsoft.aspnetcore.authorization.8.0.8.nupkg.sha512",
     "C:\\Users\\itzdi\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.8\\microsoft.aspnetcore.components.8.0.8.nupkg.sha512",
