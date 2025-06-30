@@ -1,4 +1,6 @@
-﻿window.renderGraph = function (graphData) {
+﻿let cyInstance;
+
+window.renderGraph = function (graphData) {
     console.log("📊 Graph data:", graphData);
 
     const nodes = graphData.nodes.map(n => ({
@@ -18,10 +20,10 @@
         }
     }));
 
-    const cy = cytoscape({
+    cyInstance = cytoscape({
         container: document.getElementById('graph'),
         elements: nodes.concat(edges),
-        layout: { name: 'circle' },
+        layout: { name: 'cose' },
         style: [
             {
                 selector: 'node',
@@ -44,5 +46,14 @@
                 }
             }
         ]
+    });
+};
+
+window.setupGraphInterop = function (dotNetHelper) {
+    if (!cyInstance) return;
+
+    cyInstance.on('tap', 'node', function (evt) {
+        const nodeId = evt.target.id();
+        dotNetHelper.invokeMethodAsync('ShowCityModal', nodeId);
     });
 };

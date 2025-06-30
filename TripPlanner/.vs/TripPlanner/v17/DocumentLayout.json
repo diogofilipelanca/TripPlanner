@@ -1,12 +1,168 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{67E2B3DC-36F6-44AA-9CE7-7C12C5BE6A60}|..\\TripPlanner.Client\\TripPlanner.Client.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner.client\\pages\\planner.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner\\wwwroot\\js\\graphs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|solutionrelative:wwwroot\\js\\graphs.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67E2B3DC-36F6-44AA-9CE7-7C12C5BE6A60}|..\\TripPlanner.Client\\TripPlanner.Client.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner.client\\pages\\planner.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67E2B3DC-36F6-44AA-9CE7-7C12C5BE6A60}|..\\TripPlanner.Client\\TripPlanner.Client.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner.client\\components\\nodesdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67E2B3DC-36F6-44AA-9CE7-7C12C5BE6A60}|..\\TripPlanner.Client\\TripPlanner.Client.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner.client\\components\\nodesdialog.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67E2B3DC-36F6-44AA-9CE7-7C12C5BE6A60}|..\\TripPlanner.Client\\TripPlanner.Client.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner.client\\pages\\trips\\tripslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|c:\\users\\itzdi\\desktop\\tripplanner\\tripplanner\\controller\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00A44AAA-5702-4DEC-8335-81B535D4B9E8}|TripPlanner.csproj|solutionrelative:controller\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TripsList.razor",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Pages\\Trips\\TripsList.razor",
+              "RelativeDocumentMoniker": "..\\TripPlanner.Client\\Pages\\Trips\\TripsList.razor",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Pages\\Trips\\TripsList.razor",
+              "RelativeToolTip": "..\\TripPlanner.Client\\Pages\\Trips\\TripsList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T17:05:50.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NodesDialog.razor.cs",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Components\\NodesDialog.razor.cs",
+              "RelativeDocumentMoniker": "..\\TripPlanner.Client\\Components\\NodesDialog.razor.cs",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Components\\NodesDialog.razor.cs",
+              "RelativeToolTip": "..\\TripPlanner.Client\\Components\\NodesDialog.razor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T17:03:29.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NodesDialog.razor",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Components\\NodesDialog.razor",
+              "RelativeDocumentMoniker": "..\\TripPlanner.Client\\Components\\NodesDialog.razor",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Components\\NodesDialog.razor",
+              "RelativeToolTip": "..\\TripPlanner.Client\\Components\\NodesDialog.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T17:02:01.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T16:48:57.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-27T16:44:47.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Planner.razor",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Pages\\Planner.razor",
+              "RelativeDocumentMoniker": "..\\TripPlanner.Client\\Pages\\Planner.razor",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Pages\\Planner.razor",
+              "RelativeToolTip": "..\\TripPlanner.Client\\Pages\\Planner.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-27T16:20:06.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Planner.razor.cs",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Pages\\Planner.razor.cs",
+              "RelativeDocumentMoniker": "..\\TripPlanner.Client\\Pages\\Planner.razor.cs",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\Pages\\Planner.razor.cs",
+              "RelativeToolTip": "..\\TripPlanner.Client\\Pages\\Planner.razor.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwDAAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T16:18:54.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "graphs.js",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\js\\graphs.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\graphs.js",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\js\\graphs.js",
+              "RelativeToolTip": "wwwroot\\js\\graphs.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-27T16:16:24.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\Controller\\CitiesController.cs",
+              "RelativeDocumentMoniker": "Controller\\CitiesController.cs",
+              "ToolTip": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\Controller\\CitiesController.cs",
+              "RelativeToolTip": "Controller\\CitiesController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAqwEcAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T15:51:41.713Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
