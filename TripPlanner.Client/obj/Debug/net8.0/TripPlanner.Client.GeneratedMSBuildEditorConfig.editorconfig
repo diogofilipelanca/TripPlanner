@@ -22,6 +22,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\itzdi\Desktop\Projetos\TripPlanner\TripPlanner\TripPlanner.Client
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Components/NodesDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOb2Rlc0RpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Pages/Cities/CitiesEdit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2l0aWVzXENpdGllc0VkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

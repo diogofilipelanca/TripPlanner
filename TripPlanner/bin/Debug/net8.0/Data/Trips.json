@@ -1,21 +1,5 @@
 [
   {
-    "Id": "df9efe03-b647-4b42-a205-b576fc2a6044",
-    "Origin": "Lisboa",
-    "Destination": "Porto",
-    "Price": 23,
-    "Time": 23,
-    "Emissions": 1
-  },
-  {
-    "Id": "00b8b3b3-aca3-4e94-b837-cdc882bc2e7a",
-    "Origin": "Porto",
-    "Destination": "Lisboa",
-    "Price": 23,
-    "Time": 23,
-    "Emissions": 23
-  },
-  {
     "Id": "375207ce-e865-428d-8064-0898c3b3f7a1",
     "Origin": "Set\u00FAbal",
     "Destination": "Porto",
@@ -56,11 +40,35 @@
     "Emissions": 0
   },
   {
-    "Id": "70e88959-c8c8-42aa-9912-cbd30ce54544",
+    "Id": "94bde213-07ce-43fc-8263-6a50b340c551",
     "Origin": "Lisboa",
-    "Destination": "Leiria",
-    "Price": 0,
-    "Time": 0,
-    "Emissions": 0
+    "Destination": "Porto",
+    "Price": 543,
+    "Time": 6454,
+    "Emissions": 34
+  },
+  {
+    "Id": "d85f60a3-0f00-4ce7-9213-42f80fdc16a4",
+    "Origin": "Lisboa",
+    "Destination": "Algarve",
+    "Price": 24,
+    "Time": 5,
+    "Emissions": 44
+  },
+  {
+    "Id": "b2b959b0-2229-418f-afc0-2adfd6fabff4",
+    "Origin": "Algarve",
+    "Destination": "Set\u00FAbal",
+    "Price": 2,
+    "Time": 655,
+    "Emissions": 2
+  },
+  {
+    "Id": "9a30a727-0f2e-4321-aefd-c6ca059c98e5",
+    "Origin": "Braga",
+    "Destination": "Lisboa",
+    "Price": 32,
+    "Time": 4,
+    "Emissions": 241
   }
 ]

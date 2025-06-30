@@ -9,6 +9,9 @@ builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
 builder.Services.AddRadzenComponents();
+
+builder.Services.AddScoped<DialogService>();
+
 builder.Services.AddHttpClient();
 
 builder.Services.AddHttpClient("api", client => {

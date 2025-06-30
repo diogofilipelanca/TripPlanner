@@ -49,6 +49,7 @@ namespace TripPlanner.Controller {
         [HttpDelete("{name}")]
         public async Task<IActionResult> DeleteCity(string name) {
             var filepath = Path.Combine(env.ContentRootPath, "Data", "Cities.json");
+            var tripsfilepath = Path.Combine(env.ContentRootPath, "Data", "Trips.json");
 
             List<City> cityList = new List<City>();
 
@@ -61,6 +62,15 @@ namespace TripPlanner.Controller {
 
                     var newJson = JsonSerializer.Serialize(cityList, new JsonSerializerOptions { WriteIndented = true });
                     await System.IO.File.WriteAllTextAsync(filepath, newJson);
+
+                    if (System.IO.File.Exists(tripsfilepath)) {
+                        var tripsJson = await System.IO.File.ReadAllTextAsync(tripsfilepath);
+                        var tripsList = JsonSerializer.Deserialize<List<Trip>>(tripsJson) ?? new();
+                        tripsList.RemoveAll(t => t.Origin == name || t.Destination == name);
+
+                        var newtripsJson = JsonSerializer.Serialize(tripsList, new JsonSerializerOptions { WriteIndented = true });
+                        await System.IO.File.WriteAllTextAsync(tripsfilepath, newtripsJson);
+                    }
                 }
             }
             return Ok();
