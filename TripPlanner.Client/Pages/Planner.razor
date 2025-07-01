@@ -1,7 +1,48 @@
 ﻿@using TripPlanner.Client.Enums
+@using TripPlanner.Client.Models
+@using static TripPlanner.Client.Enums.Enums
 @attribute [Route(PageRoutes.Planner)]
 @rendermode InteractiveAuto
 
 <h3>Planner</h3>
+<div style="margin-bottom: 20px">
+    <RadzenTemplateForm TItem="@Optimize" Data="@Optimize" Submit="@OnSubmit">
+        <RadzenRow AlignItems="AlignItems.Center">
+            <RadzenFormField Text="Origem">
+                <RadzenDropDown Data="@citiesList" @bind-Value="@Optimize.Origin" TValue="string" TextProperty="Name" ValueProperty="Name" />
+            </RadzenFormField>
+            <RadzenFormField Text="Destinacao">
+                <RadzenDropDown Data="@citiesList" @bind-Value="@Optimize.Destination" TValue="string" TextProperty="Name" ValueProperty="Name" />
+            </RadzenFormField>
+            <RadzenFormField Text="Otimizacao">
+                <RadzenDropDown Data="Enum.GetNames(typeof(OptimizeField))" @bind-Value="@Optimize.OptimizeField" />
+            </RadzenFormField>
+        </RadzenRow>
+        <RadzenRow AlignItems="AlignItems.Center">
+            <div style="margin-top: 10px">
+                <RadzenButton ButtonType="@ButtonType.Submit" Text="Submit" />
+                <RadzenButton ButtonType="@ButtonType.Reset" Text="Reset" Click="@ResetFields" />
+            </div>
+        </RadzenRow>
+    </RadzenTemplateForm>
+</div>
 
-<div id="graph" style="width: 100%; height: 90vh; border: 1px solid gray"></div>
+<RadzenTabs Change=@OnChange TabPosition="TabPosition.Top" RenderMode="TabRenderMode.Client">
+    <Tabs>
+        <RadzenTabsItem Text="Todos">
+            <div id="graph-Todos" style="width: 100%; height: 72vh;"></div>
+        </RadzenTabsItem>
+
+        <RadzenTabsItem Text="Carro">
+            <div id="graph-Carro" style="width: 100%; height: 72vh;"></div>
+        </RadzenTabsItem>
+
+        <RadzenTabsItem Text="Autocarro">
+            <div id="graph-Autocarro" style="width: 100%; height: 72vh;"></div>
+        </RadzenTabsItem>
+
+        <RadzenTabsItem Text="Avião">
+            <div id="graph-Aviao" style="width: 100%; height: 72vh;"></div>
+        </RadzenTabsItem>
+    </Tabs>
+</RadzenTabs>

@@ -2105,3 +2105,4 @@ C:\Users\itzdi\Desktop\TripPlanner\TripPlanner.Client\obj\Debug\net8.0\TripPlann
 C:\Users\itzdi\Desktop\TripPlanner\TripPlanner.Client\obj\Debug\net8.0\refint\TripPlanner.Client.dll
 C:\Users\itzdi\Desktop\TripPlanner\TripPlanner.Client\obj\Debug\net8.0\TripPlanner.Client.pdb
 C:\Users\itzdi\Desktop\TripPlanner\TripPlanner.Client\obj\Debug\net8.0\ref\TripPlanner.Client.dll
+C:\Users\itzdi\Desktop\Projetos\TripPlanner\TripPlanner\TripPlanner.Client\obj\Debug\net8.0\TripPlanner.Client.sourcelink.json

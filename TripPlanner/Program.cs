@@ -15,7 +15,7 @@ builder.Services.AddScoped<DialogService>();
 builder.Services.AddHttpClient();
 
 builder.Services.AddHttpClient("api", client => {
-    client.BaseAddress = new Uri("https://localhost:7014/");
+    client.BaseAddress = new Uri("https://localhost:1000/");
 });
 
 builder.Services.AddCors(options => {

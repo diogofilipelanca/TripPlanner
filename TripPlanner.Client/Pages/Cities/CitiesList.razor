@@ -12,6 +12,10 @@
         <RadzenDataGridColumn Property="@nameof(City.Name)" Title="Name" />
         <RadzenDataGridColumn Context="city" Width="150px" Title="Actions">
             <Template Context="city">
+                <RadzenButton Icon="edit"
+                              ButtonStyle="ButtonStyle.Secondary"
+                              Size="ButtonSize.Medium"
+                              Click="@(() => EditCity(city))" />
                 <RadzenButton Icon="delete"
                               ButtonStyle="ButtonStyle.Danger"
                               Size="ButtonSize.Medium"

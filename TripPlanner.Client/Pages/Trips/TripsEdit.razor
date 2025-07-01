@@ -1,5 +1,6 @@
 ﻿@using TripPlanner.Client.Enums
 @using TripPlanner.Client.Models
+@using static TripPlanner.Client.Enums.Enums
 @attribute [Route(PageRoutes.TripsCreate)]
 @attribute [Route($"{PageRoutes.TripsEdit}/{{Id}}")]
 @rendermode InteractiveAuto
@@ -13,6 +14,9 @@
         </RadzenFormField>
         <RadzenFormField Text="Destination">
             <RadzenDropDown Data="@cities" @bind-Value="@trip.Destination" TValue="string" ValueProperty="Name" TextProperty="Name" />
+        </RadzenFormField>
+        <RadzenFormField Text="Transport">
+            <RadzenDropDown Data="Enum.GetNames(typeof(TypeTransport))" @bind-Value="@trip.TypeTransport" />
         </RadzenFormField>
         <RadzenFormField Text="Time">
             <RadzenNumeric @bind-Value="@trip.Time" />

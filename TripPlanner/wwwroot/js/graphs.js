@@ -1,12 +1,13 @@
 ﻿let cyInstance;
 
-window.renderGraph = function (graphData) {
+window.renderGraph = function (graphData, type) {
     console.log("📊 Graph data:", graphData);
 
     const nodes = graphData.nodes.map(n => ({
         data: {
             id: n.id,
-            label: n.id
+            label: n.id,
+            highlighted: n.highlighted
         }
     }));
 
@@ -16,14 +17,16 @@ window.renderGraph = function (graphData) {
             target: l.target,
             price: l.price,
             time: l.time,
-            emissions: l.emissions
+            emissions: l.emissions,
+            highlighted: l.highlighted,
+            label: l.label
         }
     }));
 
     cyInstance = cytoscape({
-        container: document.getElementById('graph'),
+        container: document.getElementById(`graph-${type}`),
         elements: nodes.concat(edges),
-        layout: { name: 'cose' },
+        layout: { name: 'circle' },
         style: [
             {
                 selector: 'node',
@@ -36,13 +39,45 @@ window.renderGraph = function (graphData) {
                 }
             },
             {
+                selector: 'node[highlighted = "true"]',
+                style: {
+                    'background-color': 'green'
+                }
+            },
+            {
                 selector: 'edge',
                 style: {
-                    'width': 3,
+                    'width': 2,
                     'line-color': '#ccc',
-                    'target-arrow-color': '#ccc',
+                    'curve-style': 'bezier',
                     'target-arrow-shape': 'triangle',
-                    'curve-style': 'bezier'
+                    'target-arrow-color': '#ccc'
+                }
+            },
+            {
+                selector: 'edge[label]',
+                style: {
+                    'label': 'data(label)',
+                    'font-size': '11px',
+                    'color': '#fff',
+                    'text-rotation': 'autorotate',
+                    'text-margin-y': '-6px',
+
+                    // Opções visuais mais leves e suaves
+                    'text-background-color': '#fff',
+                    'text-background-opacity': 0.8,
+                    'text-background-shape': 'roundrectangle',
+                    'text-background-padding': '2px',
+                    'text-border-opacity': 1,
+                    'text-background-opacity': 0
+                }
+            },
+            {
+                selector: 'edge[highlighted = "true"]',
+                style: {
+                    'width': 4,
+                    'line-color': '#27ae60',
+                    'target-arrow-color': '#27ae60'
                 }
             }
         ]

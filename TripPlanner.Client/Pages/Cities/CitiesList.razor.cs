@@ -22,6 +22,10 @@ namespace TripPlanner.Client.Pages.Cities {
             Navigation.NavigateTo(PageRoutes.CitiesCreate);
         }
 
+        public void EditCity(City city) {
+            Navigation.NavigateTo($"{PageRoutes.CitiesEdit}/{city.Name}");
+        }
+
         public async void DeleteCity(City city) {
             await HttpClient!.DeleteAsync($"api/cities/{city.Name}");
             Navigation.NavigateTo(PageRoutes.CitiesList, true);

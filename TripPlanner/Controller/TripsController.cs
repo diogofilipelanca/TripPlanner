@@ -24,6 +24,20 @@ namespace TripPlanner.Controller {
             return new();
         }
 
+        [HttpGet("{id}")]
+        public async Task<Trip> GetByIdTrips(string id) {
+            var filepath = Path.Combine(env.ContentRootPath, "Data", "Trips.json");
+            if (System.IO.File.Exists(filepath)) {
+                var existingJson = await System.IO.File.ReadAllTextAsync(filepath);
+
+                if (!string.IsNullOrWhiteSpace(existingJson)) {
+                    var trips = JsonSerializer.Deserialize<List<Trip>>(existingJson);
+                    return trips?.Where(trip => trip.Id == id).FirstOrDefault() ?? new();
+                }
+            }
+            return new();
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateTrip([FromBody] Trip trip) {
             var filepath = Path.Combine(env.ContentRootPath, "Data", "Trips.json");
@@ -46,20 +60,41 @@ namespace TripPlanner.Controller {
             return Ok();
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCity(string id) {
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> UpdateTrip(string id, [FromBody] Trip _trip) {
             var filepath = Path.Combine(env.ContentRootPath, "Data", "Trips.json");
 
-            List<Trip> cityList = new List<Trip>();
+            List<Trip> tripList = new List<Trip>();
 
             if (System.IO.File.Exists(filepath)) {
                 var existingJson = await System.IO.File.ReadAllTextAsync(filepath);
                 if (!string.IsNullOrWhiteSpace(existingJson)) {
-                    cityList = JsonSerializer.Deserialize<List<Trip>>(existingJson) ?? new();
-                    var city = cityList.Where(c => c.Id == id).FirstOrDefault()!;
-                    cityList.Remove(city);
+                    tripList = JsonSerializer.Deserialize<List<Trip>>(existingJson) ?? new();
+                    var trip = tripList.Where(c => c.Id == id).FirstOrDefault()!;
+                    tripList.Remove(trip);
+                    tripList.Add(_trip);
 
-                    var newJson = JsonSerializer.Serialize(cityList, new JsonSerializerOptions { WriteIndented = true });
+                    var newJson = JsonSerializer.Serialize(tripList, new JsonSerializerOptions { WriteIndented = true });
+                    await System.IO.File.WriteAllTextAsync(filepath, newJson);
+                }
+            }
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTrip(string id) {
+            var filepath = Path.Combine(env.ContentRootPath, "Data", "Trips.json");
+
+            List<Trip> tripList = new List<Trip>();
+
+            if (System.IO.File.Exists(filepath)) {
+                var existingJson = await System.IO.File.ReadAllTextAsync(filepath);
+                if (!string.IsNullOrWhiteSpace(existingJson)) {
+                    tripList = JsonSerializer.Deserialize<List<Trip>>(existingJson) ?? new();
+                    var city = tripList.Where(c => c.Id == id).FirstOrDefault()!;
+                    tripList.Remove(city);
+
+                    var newJson = JsonSerializer.Serialize(tripList, new JsonSerializerOptions { WriteIndented = true });
                     await System.IO.File.WriteAllTextAsync(filepath, newJson);
                 }
             }

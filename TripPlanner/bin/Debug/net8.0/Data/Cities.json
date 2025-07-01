@@ -1,20 +1,23 @@
 [
   {
+    "Name": "Lisboa"
+  },
+  {
     "Name": "Porto"
+  },
+  {
+    "Name": "Faro"
   },
   {
     "Name": "Braga"
   },
   {
-    "Name": "Leiria"
+    "Name": "Evora"
   },
   {
-    "Name": "Set\u00FAbal"
+    "Name": "Coimbra"
   },
   {
-    "Name": "Algarve"
-  },
-  {
-    "Name": "Lisboa"
+    "Name": "Setubal"
   }
 ]

@@ -140,3 +140,5 @@ C:\Users\itzdi\Desktop\TripPlanner\TripPlanner\obj\Debug\net8.0\refint\TripPlann
 C:\Users\itzdi\Desktop\TripPlanner\TripPlanner\obj\Debug\net8.0\TripPlanner.pdb
 C:\Users\itzdi\Desktop\TripPlanner\TripPlanner\obj\Debug\net8.0\TripPlanner.genruntimeconfig.cache
 C:\Users\itzdi\Desktop\TripPlanner\TripPlanner\obj\Debug\net8.0\ref\TripPlanner.dll
+C:\Users\itzdi\Desktop\Projetos\TripPlanner\TripPlanner\TripPlanner\bin\Debug\net8.0\Data\Trips.json
+C:\Users\itzdi\Desktop\Projetos\TripPlanner\TripPlanner\TripPlanner\obj\Debug\net8.0\TripPlanner.sourcelink.json

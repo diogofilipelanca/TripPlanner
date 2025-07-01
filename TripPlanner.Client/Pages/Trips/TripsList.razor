@@ -11,8 +11,21 @@
     <Columns>
         <RadzenDataGridColumn Property="@nameof(Trip.Origin)" Title="Origin" />
         <RadzenDataGridColumn Property="@nameof(Trip.Destination)" Title="Destination" />
+        <RadzenDataGridColumn Property="@nameof(Trip.TypeTransport)" Title="Transport" />
         <RadzenDataGridColumn Property="@nameof(Trip.Time)" Title="Time" />
         <RadzenDataGridColumn Property="@nameof(Trip.Price)" Title="Price" />
         <RadzenDataGridColumn Property="@nameof(Trip.Emissions)" Title="Emissions" />
+        <RadzenDataGridColumn Context="trip" Width="150px" Title="Actions">
+            <Template Context="trip">
+                <RadzenButton Icon="edit"
+                              ButtonStyle="ButtonStyle.Secondary"
+                              Size="ButtonSize.Medium"
+                              Click="@(() => EditTrip(trip))" />
+                <RadzenButton Icon="delete"
+                              ButtonStyle="ButtonStyle.Danger"
+                              Size="ButtonSize.Medium"
+                              Click="@(() => DeleteTrip(trip))" />
+            </Template>
+        </RadzenDataGridColumn>
     </Columns>
 </RadzenDataGrid>

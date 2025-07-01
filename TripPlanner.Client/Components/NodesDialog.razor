@@ -4,6 +4,9 @@
     <Columns>
         <RadzenDataGridColumn Property="@nameof(Trip.Origin)" Title="Origin" />
         <RadzenDataGridColumn Property="@nameof(Trip.Destination)" Title="Destination" />
+        @if (typeTransport == "Todos") {
+            <RadzenDataGridColumn Property="@nameof(Trip.TypeTransport)" Title="Transportation" />
+        }
         <RadzenDataGridColumn Property="@nameof(Trip.Time)" Title="Time" />
         <RadzenDataGridColumn Property="@nameof(Trip.Price)" Title="Price" />
         <RadzenDataGridColumn Property="@nameof(Trip.Emissions)" Title="Emissions" />

@@ -1,14 +1,14 @@
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #353131 !important;
+    background-color: #121212 !important;
 }
 
 a, .btn-link {
-    color: #006bb7;
+    color: #BB86FC;
 }
 
-h1, h3, label, span{
-    color: #fff;
+h1, h3, label, span {
+    color: #E0E0E0;
 }
 
 .btn-primary {
@@ -53,4 +53,12 @@ h1:focus {
 
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
+}
+
+.rz-tabview-top > .rz-tabview-nav li {
+    margin-right: 15px !important;
+}
+
+.rz-dialog-title {
+    color: var(--rz-primary) !important;
 }
