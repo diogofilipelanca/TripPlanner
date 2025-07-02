@@ -21,6 +21,18 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\icons\\construcao-da-cidade.png",
+      "PackagePath": "staticwebassets\\icons\\construcao-da-cidade.png"
+    },
+    {
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\icons\\destino.png",
+      "PackagePath": "staticwebassets\\icons\\destino.png"
+    },
+    {
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\icons\\mapa-da-cidade.png",
+      "PackagePath": "staticwebassets\\icons\\mapa-da-cidade.png"
+    },
+    {
       "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\js\\graphs.js",
       "PackagePath": "staticwebassets\\js\\graphs.js"
     },

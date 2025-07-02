@@ -423,10 +423,388 @@
     "Emissions": 40.4
   },
   {
+    "Id": "1ef99f4e-7e45-4977-9654-eb452946ad36",
+    "Origin": "Lisboa",
+    "Destination": "Porto",
+    "TypeTransport": "Autocarro",
+    "Price": 12.95,
+    "Time": 3.3,
+    "Emissions": 8.7
+  },
+  {
+    "Id": "fa3f338d-d3e0-40f5-8282-34c784cbb78c",
+    "Origin": "Lisboa",
+    "Destination": "Braga",
+    "TypeTransport": "Autocarro",
+    "Price": 9.95,
+    "Time": 3.45,
+    "Emissions": 10.2
+  },
+  {
+    "Id": "1c21b53d-c3b6-4524-b297-8d77a3f61913",
+    "Origin": "Lisboa",
+    "Destination": "Coimbra",
+    "TypeTransport": "Autocarro",
+    "Price": 6.95,
+    "Time": 2.2,
+    "Emissions": 5.7
+  },
+  {
+    "Id": "d0a5c30e-5f3b-4938-bff9-63332a978953",
+    "Origin": "Lisboa",
+    "Destination": "Setubal",
+    "TypeTransport": "Autocarro",
+    "Price": 6,
+    "Time": 0.45,
+    "Emissions": 1.4
+  },
+  {
+    "Id": "855d9023-7698-440f-be77-d4c29257df26",
+    "Origin": "Lisboa",
+    "Destination": "Evora",
+    "TypeTransport": "Autocarro",
+    "Price": 5.95,
+    "Time": 2,
+    "Emissions": 3.8
+  },
+  {
+    "Id": "bfa98cad-a125-42be-bb4f-8ff6c6d99fd9",
+    "Origin": "Lisboa",
+    "Destination": "Faro",
+    "TypeTransport": "Autocarro",
+    "Price": 12.95,
+    "Time": 4,
+    "Emissions": 7.8
+  },
+  {
+    "Id": "1616d94e-a568-495d-96c2-c3d19fe0d9f5",
+    "Origin": "Porto",
+    "Destination": "Lisboa",
+    "TypeTransport": "Autocarro",
+    "Price": 12.95,
+    "Time": 3.3,
+    "Emissions": 8.7
+  },
+  {
+    "Id": "1c3a50ee-89bb-4427-8e2b-49be7dffb09f",
+    "Origin": "Porto",
+    "Destination": "Braga",
+    "TypeTransport": "Autocarro",
+    "Price": 3.95,
+    "Time": 0.45,
+    "Emissions": 1.5
+  },
+  {
+    "Id": "6b28aff2-f690-452e-afde-15810c3fcd8c",
+    "Origin": "Porto",
+    "Destination": "Coimbra",
+    "TypeTransport": "Autocarro",
+    "Price": 6.45,
+    "Time": 1.3,
+    "Emissions": 3.3
+  },
+  {
+    "Id": "419eb780-a198-4bd6-90a2-1dece787c3f0",
+    "Origin": "Porto",
+    "Destination": "Setubal",
+    "TypeTransport": "Autocarro",
+    "Price": 14.3,
+    "Time": 4.3,
+    "Emissions": 9.8
+  },
+  {
+    "Id": "94ad05ca-293d-44e4-b757-c61ac2837162",
+    "Origin": "Porto",
+    "Destination": "Evora",
+    "TypeTransport": "Autocarro",
+    "Price": 14.95,
+    "Time": 5.3,
+    "Emissions": 11.4
+  },
+  {
+    "Id": "3fc4925a-da4a-4953-af96-9999648a9043",
+    "Origin": "Porto",
+    "Destination": "Faro",
+    "TypeTransport": "Autocarro",
+    "Price": 18.95,
+    "Time": 7.15,
+    "Emissions": 15.5
+  },
+  {
+    "Id": "66299baf-e40a-443c-9157-13d4cd6da612",
+    "Origin": "Faro",
+    "Destination": "Lisboa",
+    "TypeTransport": "Autocarro",
+    "Price": 12.95,
+    "Time": 4,
+    "Emissions": 29.8
+  },
+  {
+    "Id": "303d4ab8-1d93-4950-896c-1d3305792113",
+    "Origin": "Faro",
+    "Destination": "Porto",
+    "TypeTransport": "Autocarro",
+    "Price": 18.95,
+    "Time": 7.15,
+    "Emissions": 59
+  },
+  {
+    "Id": "c1b171b9-4394-4f94-af42-a2dc8d956903",
+    "Origin": "Faro",
+    "Destination": "Braga",
+    "TypeTransport": "Autocarro",
+    "Price": 19.9,
+    "Time": 8.15,
+    "Emissions": 16.8
+  },
+  {
+    "Id": "cfc6caee-8c12-47b2-b196-e25d0f1a5040",
+    "Origin": "Faro",
+    "Destination": "Coimbra",
+    "TypeTransport": "Autocarro",
+    "Price": 15.5,
+    "Time": 6.35,
+    "Emissions": 12.4
+  },
+  {
+    "Id": "2ee4e073-e8ea-4639-8c7d-8b97ff9ad2d1",
+    "Origin": "Faro",
+    "Destination": "Setubal",
+    "TypeTransport": "Autocarro",
+    "Price": 5.95,
+    "Time": 3.45,
+    "Emissions": 6.9
+  },
+  {
+    "Id": "1171d300-4484-4ca4-ad50-0af717abd4c2",
+    "Origin": "Faro",
+    "Destination": "Evora",
+    "TypeTransport": "Autocarro",
+    "Price": 10.95,
+    "Time": 4.15,
+    "Emissions": 6.3
+  },
+  {
+    "Id": "8c646cb8-6b36-48ed-9993-db90a27d9d9c",
+    "Origin": "Braga",
+    "Destination": "Lisboa",
+    "TypeTransport": "Autocarro",
+    "Price": 9.95,
+    "Time": 3.45,
+    "Emissions": 10.2
+  },
+  {
+    "Id": "f9f55eda-d610-4a7e-86bc-53a1e4dd5c9b",
+    "Origin": "Braga",
+    "Destination": "Porto",
+    "TypeTransport": "Autocarro",
+    "Price": 3.95,
+    "Time": 0.45,
+    "Emissions": 1.5
+  },
+  {
+    "Id": "60d9e5e5-d883-41d4-a266-d8dc33024fa4",
+    "Origin": "Braga",
+    "Destination": "Coimbra",
+    "TypeTransport": "Autocarro",
+    "Price": 8.3,
+    "Time": 2.45,
+    "Emissions": 4.7
+  },
+  {
+    "Id": "4368b906-bef5-432b-abe1-68da3789a981",
+    "Origin": "Braga",
+    "Destination": "Evora",
+    "TypeTransport": "Autocarro",
+    "Price": 14.3,
+    "Time": 6.3,
+    "Emissions": 12.8
+  },
+  {
+    "Id": "3950ac7b-7770-46a9-ba30-2b736a2f18bf",
+    "Origin": "Braga",
+    "Destination": "Setubal",
+    "TypeTransport": "Autocarro",
+    "Price": 17.9,
+    "Time": 5.45,
+    "Emissions": 11.2
+  },
+  {
+    "Id": "4a952103-402b-4e2e-9e1d-ee14c1aae4f6",
+    "Origin": "Braga",
+    "Destination": "Faro",
+    "TypeTransport": "Autocarro",
+    "Price": 19.9,
+    "Time": 8.15,
+    "Emissions": 16.8
+  },
+  {
+    "Id": "b737e7d4-cea3-4487-9471-dc029dd98275",
+    "Origin": "Evora",
+    "Destination": "Lisboa",
+    "TypeTransport": "Autocarro",
+    "Price": 5.95,
+    "Time": 2,
+    "Emissions": 3.8
+  },
+  {
+    "Id": "45c37abe-0bb3-4eb4-a0e9-8029516d3402",
+    "Origin": "Evora",
+    "Destination": "Porto",
+    "TypeTransport": "Autocarro",
+    "Price": 14.95,
+    "Time": 5.3,
+    "Emissions": 11.4
+  },
+  {
+    "Id": "3a2272f1-7c64-4d21-b25e-7b9f3e243e35",
+    "Origin": "Evora",
+    "Destination": "Braga",
+    "TypeTransport": "Autocarro",
+    "Price": 14.3,
+    "Time": 6.3,
+    "Emissions": 12.8
+  },
+  {
+    "Id": "36555437-4064-4abc-8ca6-81e65d5f6eae",
+    "Origin": "Evora",
+    "Destination": "Coimbra",
+    "TypeTransport": "Autocarro",
+    "Price": 13.1,
+    "Time": 4,
+    "Emissions": 8.3
+  },
+  {
+    "Id": "b858b323-4438-43c4-8266-587005fdca2f",
+    "Origin": "Evora",
+    "Destination": "Setubal",
+    "TypeTransport": "Autocarro",
+    "Price": 10.7,
+    "Time": 1.35,
+    "Emissions": 2.4
+  },
+  {
+    "Id": "92c4aa53-0b6a-476f-879f-1cb00b4c005a",
+    "Origin": "Evora",
+    "Destination": "Faro",
+    "TypeTransport": "Autocarro",
+    "Price": 10.95,
+    "Time": 4.15,
+    "Emissions": 6.3
+  },
+  {
+    "Id": "4eb2a4d9-f4de-4c63-9750-f3f5b731044b",
+    "Origin": "Coimbra",
+    "Destination": "Lisboa",
+    "TypeTransport": "Autocarro",
+    "Price": 6.95,
+    "Time": 2.4,
+    "Emissions": 5.7
+  },
+  {
+    "Id": "bd70e454-4592-45c1-9535-1a6360969cd8",
+    "Origin": "Coimbra",
+    "Destination": "Porto",
+    "TypeTransport": "Autocarro",
+    "Price": 6.45,
+    "Time": 1.3,
+    "Emissions": 3.4
+  },
+  {
+    "Id": "ce542a15-8dde-4503-9076-e14d8e59c3d0",
+    "Origin": "Coimbra",
+    "Destination": "Braga",
+    "TypeTransport": "Autocarro",
+    "Price": 8.3,
+    "Time": 2.45,
+    "Emissions": 4.7
+  },
+  {
+    "Id": "f692886c-1b37-406a-b66a-70d1b191d984",
+    "Origin": "Coimbra",
+    "Destination": "Setubal",
+    "TypeTransport": "Autocarro",
+    "Price": 14.3,
+    "Time": 3.45,
+    "Emissions": 5.3
+  },
+  {
+    "Id": "0baddcac-96bf-4f1b-bd75-a5d4e347951d",
+    "Origin": "Coimbra",
+    "Destination": "Evora",
+    "TypeTransport": "Autocarro",
+    "Price": 13.1,
+    "Time": 4,
+    "Emissions": 8.3
+  },
+  {
+    "Id": "d753e23f-3004-46e3-ab10-f062c12a718a",
+    "Origin": "Coimbra",
+    "Destination": "Faro",
+    "TypeTransport": "Autocarro",
+    "Price": 15.5,
+    "Time": 6.35,
+    "Emissions": 12.4
+  },
+  {
+    "Id": "a3301700-ef88-4293-95f3-519e98994c5d",
+    "Origin": "Setubal",
+    "Destination": "Lisboa",
+    "TypeTransport": "Autocarro",
+    "Price": 6,
+    "Time": 0.45,
+    "Emissions": 1.4
+  },
+  {
+    "Id": "fe2300c1-7731-403a-97dd-de2728b9d28d",
+    "Origin": "Setubal",
+    "Destination": "Porto",
+    "TypeTransport": "Autocarro",
+    "Price": 14.3,
+    "Time": 4.3,
+    "Emissions": 9.8
+  },
+  {
+    "Id": "ac0f9089-d256-4d50-9693-a7a0ffee6b59",
+    "Origin": "Setubal",
+    "Destination": "Braga",
+    "TypeTransport": "Autocarro",
+    "Price": 17.9,
+    "Time": 5.45,
+    "Emissions": 11.2
+  },
+  {
+    "Id": "2797b00a-a107-4e69-b920-7773a5214033",
+    "Origin": "Setubal",
+    "Destination": "Coimbra",
+    "TypeTransport": "Autocarro",
+    "Price": 14.3,
+    "Time": 3.45,
+    "Emissions": 5.3
+  },
+  {
+    "Id": "627a9b5f-a09e-4137-aab5-1e0424c788e2",
+    "Origin": "Setubal",
+    "Destination": "Evora",
+    "TypeTransport": "Autocarro",
+    "Price": 10.7,
+    "Time": 1.35,
+    "Emissions": 2.4
+  },
+  {
+    "Id": "d5aef3f8-b2e4-4518-9314-e4d9e700d0da",
+    "Origin": "Setubal",
+    "Destination": "Faro",
+    "TypeTransport": "Autocarro",
+    "Price": 5.95,
+    "Time": 3.45,
+    "Emissions": 6.9
+  },
+  {
     "Id": "56fe58a2-1ad6-4b26-ae74-2dd986ade43c",
     "Origin": "Faro",
     "Destination": "Porto",
-    "TypeTransport": "Carro",
+    "TypeTransport": "Aviao",
     "Price": 120,
     "Time": 1.1,
     "Emissions": 86.3

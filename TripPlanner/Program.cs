@@ -11,6 +11,7 @@ builder.Services.AddRazorComponents()
 builder.Services.AddRadzenComponents();
 
 builder.Services.AddScoped<DialogService>();
+builder.Services.AddScoped<NotificationService>();
 
 builder.Services.AddHttpClient();
 

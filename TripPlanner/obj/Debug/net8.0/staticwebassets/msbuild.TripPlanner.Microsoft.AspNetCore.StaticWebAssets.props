@@ -64,6 +64,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\icons\construcao-da-cidade.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>TripPlanner</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TripPlanner</BasePath>
+      <RelativePath>icons/construcao-da-cidade.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\icons\construcao-da-cidade.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\icons\destino.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>TripPlanner</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TripPlanner</BasePath>
+      <RelativePath>icons/destino.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\icons\destino.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\icons\mapa-da-cidade.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>TripPlanner</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/TripPlanner</BasePath>
+      <RelativePath>icons/mapa-da-cidade.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\icons\mapa-da-cidade.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\graphs.js))">
       <SourceType>Package</SourceType>
       <SourceId>TripPlanner</SourceId>

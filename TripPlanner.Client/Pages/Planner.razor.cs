@@ -11,6 +11,7 @@ namespace TripPlanner.Client.Pages {
         [Inject] IJSRuntime JSRuntime { get; set; } = default!;
         [Inject] IHttpClientFactory Http { get; set; } = default!;
         [Inject] DialogService dialogService { get; set; } = default!;
+        [Inject] NotificationService NotificationService { get; set; } = default!;
         HttpClient? client { get; set; }
         private List<City> citiesList { get; set; } = new();
         private List<Trip> tripsList { get; set; } = new();
@@ -51,27 +52,27 @@ namespace TripPlanner.Client.Pages {
                     source = t.Origin,
                     target = t.Destination,
                     label = t.Time.ToString(),
-                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Origin == t.Origin && ht.Destination == t.Destination) ? "true" : "false"
+                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Id == t.Id) ? "true" : "false"
                 });
             } else if (Optimize.OptimizeField == "Custo") {
                 links = tripsList.Select(t => new {
                     source = t.Origin,
                     target = t.Destination,
                     label = t.Price.ToString(),
-                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Origin == t.Origin && ht.Destination == t.Destination) ? "true" : "false"
+                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Id == t.Id) ? "true" : "false"
                 });
             } else if (Optimize.OptimizeField == "Emissao") {
                 links = tripsList.Select(t => new {
                     source = t.Origin,
                     target = t.Destination,
                     label = t.Emissions.ToString(),
-                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Origin == t.Origin && ht.Destination == t.Destination) ? "true" : "false"
+                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Id == t.Id) ? "true" : "false"
                 });
             } else {
                 links = tripsList.Select(t => new {
                     source = t.Origin,
                     target = t.Destination,
-                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Origin == t.Origin && ht.Destination == t.Destination) ? "true" : "false"
+                    highlighted = OptimizedTrip != null && OptimizedTrip.Any(ht => ht.Id == t.Id) ? "true" : "false"
                 });
             }
 
@@ -113,89 +114,106 @@ namespace TripPlanner.Client.Pages {
         }
 
         public async Task OnSubmit() {
-            PathOptimized(Optimize.Origin, Optimize.Destination, Optimize.OptimizeField);
-            await RenderGraphs(typeTransport);
+            if (Optimize.Origin != Optimize.Destination) {
+                PathOptimized(Optimize.Origin, Optimize.Destination, Optimize.OptimizeField);
+                await RenderGraphs(typeTransport);
+            } else {
+                ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error Summary", Detail = "Origem não deve ser o mesmo que o Destino", Duration = 3000 });
+            }
         }
 
-        public void FindAllPaths(string origin, string destination) {
+        public void ShowNotification(NotificationMessage message) {
+            NotificationService.Notify(message);
+        }
+
+        public List<Trip> Dijkstra(string start, string end, string optimizeField) {
+            var distances = new Dictionary<string, decimal>();
+            var previous = new Dictionary<string, Trip>();
+            var unvisited = new HashSet<string>();
+
             List<Trip> _tripsList = new();
             if (typeTransport != "Todos") {
                 _tripsList = tripsList.Where(trip => trip.TypeTransport == typeTransport).ToList();
             } else {
                 _tripsList = tripsList;
             }
-            var allOriginPaths = _tripsList.Where(t => origin.Contains(t.Origin)).ToList();
-            if (allOriginPaths.Any()) {
-                allOriginPaths.ForEach(path => {
-                    if (path.Destination != destination) {
-                        if (path.Destination != lastOrigin || CurrentTrip.Contains(path)) {
-                            CurrentTrip.Add(path);
-                            lastOrigin = path.Origin;
-                            FindAllPaths(path.Destination, destination);
-                        }
-                    } else {
-                        CurrentTrip.Add(path);
-                        if (!Paths.Contains(CurrentTrip)) {
-                            Paths.Add(CurrentTrip);
-                        }
-                        CurrentTrip = new();
-                    }
-                });
+
+            foreach (var trip in _tripsList) {
+                distances[trip.Origin] = decimal.MaxValue;
+                unvisited.Add(trip.Origin);
+                unvisited.Add(trip.Destination);
             }
+
+            var keys = new List<string>(distances.Keys);
+
+            foreach (var chave in keys) {
+                if (chave == start)
+                    distances[chave] = 0;
+                else
+                    distances[chave] = int.MaxValue - 1000;
+            }
+
+            while (unvisited.Count > 0) {
+                var current = unvisited
+                    .Where(n => distances.ContainsKey(n))
+                    .OrderBy(n => distances[n])
+                    .FirstOrDefault();
+
+                if (current == null || current == end)
+                    break;
+
+                unvisited.Remove(current);
+
+                var neighbors = tripsList.Where(t => t.Origin == current && (typeTransport == "Todos" || t.TypeTransport == typeTransport));
+
+                foreach (var trip in neighbors) {
+                    decimal cost = optimizeField switch {
+                        nameof(OptimizeField.Tempo) => trip.Time,
+                        nameof(OptimizeField.Custo) => trip.Price,
+                        nameof(OptimizeField.Emissao) => trip.Emissions,
+                        _ => throw new Exception("Campo de otimização inválido")
+                    };
+
+                    var alt = distances[current] + cost;
+                    if (!distances.ContainsKey(trip.Destination) || alt < distances[trip.Destination]) {
+                        distances[trip.Destination] = alt;
+                        previous[trip.Destination] = trip;
+                    }
+                }
+            }
+
+            var path = new List<Trip>();
+            var curr = end;
+            while (previous.ContainsKey(curr)) {
+                var trip = previous[curr];
+                path.Insert(0, trip);
+                curr = trip.Origin;
+            }
+
+            return path;
         }
 
-        public void PathOptimized(string Origin, string Destination, string optimizeField) {
-            var trip = new List<Trip>();
-            decimal menor = int.MaxValue;
-            if (optimizeField == nameof(OptimizeField.Tempo)) {
-                FindAllPaths(Origin, Destination);
-                Paths.ForEach(path => {
-                    decimal _time = 0;
-                    var timelist = path.Select(x => x.Time).ToList();
-                    timelist.ForEach(time => {
-                        _time += time;
-                    });
-                    if (menor > _time) {
-                        menor = _time;
-                        trip = path;
-                    }
-                });
-            }
-            if (optimizeField == nameof(OptimizeField.Custo)) {
-                FindAllPaths(Origin, Destination);
-                Paths.ForEach(path => {
-                    decimal _price = 0;
-                    var timelist = path.Select(x => x.Price).ToList();
-                    timelist.ForEach(price => {
-                        _price += price;
-                    });
-                    if (menor > _price) {
-                        menor = _price;
-                        trip = path;
-                    }
-                });
-            }
-            if (optimizeField == nameof(OptimizeField.Emissao)) {
-                FindAllPaths(Origin, Destination);
-                Paths.ForEach(path => {
-                    decimal _emission = 0;
-                    var timelist = path.Select(x => x.Emissions).ToList();
-                    timelist.ForEach(emission => {
-                        _emission += emission;
-                    });
-                    if (menor > _emission) {
-                        menor = _emission;
-                        trip = path;
-                    }
-                });
-            }
+        public async Task PathOptimized(string Origin, string Destination, string optimizeField) {
 
-            object obj = new {
+            var trip = Dijkstra(Origin, Destination, optimizeField);
+            decimal menor = trip.Sum(t => optimizeField switch {
+                nameof(OptimizeField.Tempo) => t.Time,
+                nameof(OptimizeField.Custo) => t.Price,
+                nameof(OptimizeField.Emissao) => t.Emissions,
+                _ => 0
+            });
+
+            if (trip.Count() != 0) {
+                OptimizedTrip = trip;
+                await dialogService.OpenAsync<OptimizedTripDetails>($"{Optimize.Origin} até {Optimize.Destination}", new Dictionary<string, object> { { "trips", OptimizedTrip } });
+            } else {
+                ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error Summary", Detail = "Não foi possível encontrar um caminho até esse Destino", Duration = 3000 });
+            }
+            var obj = new {
                 trip,
                 optimizeField,
                 menor
             };
-            OptimizedTrip = trip;
         }
     }
 }

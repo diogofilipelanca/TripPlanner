@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TripPlanner.Client",
   "resources": {
-    "hash": "sha256-LEd1chJlkqb3aPOK8sFtWt/XKkaOIxffVVSMTOmWyQE=",
+    "hash": "sha256-VAMGT56E/IxrFYoYwwqBpL/Gb3YNMRLhXaT7BF0QiAA=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.qvb69b2oc3.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -213,10 +213,10 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "TripPlanner.Client.wasm": "sha256-wl5gZO+rn+KiBteRUlLjMZqsTv1OYvE5VywKemCXjDc="
+      "TripPlanner.Client.wasm": "sha256-HDYQTG7GDn2JWFKajv4H4ELBSBz/1qgpYHOBVvocTYs="
     },
     "pdb": {
-      "TripPlanner.Client.pdb": "sha256-iEAVkMu4FeYxUsJ9sHys5a2ix/8isdGNMu+kylAukAc="
+      "TripPlanner.Client.pdb": "sha256-8WJZ8Rbkd2/rZNdee6INlxIg7i6ZbZnDF5RqvDHz+TY="
     }
   },
   "cacheBootResources": true,

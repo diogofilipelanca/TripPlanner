@@ -1,7 +1,35 @@
-﻿@page "/"
+﻿@inject NavigationManager Navigation
+@page "/"
+@namespace TripPlanner.Components.Pages
+@using Radzen.Blazor
+@using TripPlanner.Client.Enums
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
-
-<span>Welcome to your new app.</span>
+<RadzenCardGroup Style="gap: 20px;">
+    <RadzenCard Style="text-align: center; padding: 0;">
+        <RadzenButton Style="background-color: transparent; padding: 36px 28px; width: 100%;" Click="@(() =>{Navigation.NavigateTo(PageRoutes.CitiesList);})">
+            <div style="display: grid; text-align: center;">
+                <div class="rz-dialog-title" id="rz-dialog-0-label" style="font-size: 20px; margin-bottom: 20px">Cidade</div>
+                <img src="icons/construcao-da-cidade.png" />
+            </div>
+        </RadzenButton>
+    </RadzenCard>
+    <RadzenCard Style="text-align: center; padding: 0;">
+        <RadzenButton Style="background-color: transparent; padding: 36px 28px; width: 100%;" Click="@(() =>{Navigation.NavigateTo(PageRoutes.TripsList);})">
+            <div style="display: grid; text-align: center;">
+                <div class="rz-dialog-title" id="rz-dialog-0-label" style="font-size: 20px; margin-bottom: 20px">Viagem</div>
+                <img src="icons/destino.png" />
+            </div>
+        </RadzenButton>
+    </RadzenCard>
+    <RadzenCard Style="text-align: center; padding: 0;">
+        <RadzenButton Style="background-color: transparent; padding: 36px 28px; width: 100%;" Click="@(() =>{Navigation.NavigateTo(PageRoutes.Planner);})">
+            <div style="display: grid; text-align: center;">
+                <div class="rz-dialog-title" id="rz-dialog-0-label" style="font-size: 20px; margin-bottom: 20px">Planeador de Viagens</div>
+                <img src="icons/mapa-da-cidade.png" />
+            </div>
+        </RadzenButton>
+    </RadzenCard>
+</RadzenCardGroup>
