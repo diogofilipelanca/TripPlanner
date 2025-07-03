@@ -1642,24 +1642,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\itzdi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\itzdi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
+      "projectUniqueName": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
       "projectName": "TripPlanner",
-      "projectPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
+      "projectPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
       "packagesPath": "C:\\Users\\itzdi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\obj\\",
+      "outputPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\itzdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1674,8 +1669,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj": {
-              "projectPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj"
+            "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj": {
+              "projectPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj"
             }
           }
         }
@@ -1719,7 +1714,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\TripPlanner.csproj": {}
+    "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\TripPlanner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj": {
+    "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj",
+        "projectUniqueName": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj",
         "projectName": "TripPlanner.Client",
-        "projectPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj",
+        "projectPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj",
         "packagesPath": "C:\\Users\\itzdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\obj\\",
+        "outputPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\itzdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,13 +57,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[8.0.8, )",
               "autoReferenced": true
             },
             "Radzen.Blazor": {
@@ -89,7 +85,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.10, 8.0.10]"
+              "version": "[8.0.8, 8.0.8]"
             }
           ],
           "frameworkReferences": {
@@ -97,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -106,21 +102,17 @@
         }
       }
     },
-    "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\TripPlanner.csproj": {
+    "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\TripPlanner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
+        "projectUniqueName": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
         "projectName": "TripPlanner",
-        "projectPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
+        "projectPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\TripPlanner.csproj",
         "packagesPath": "C:\\Users\\itzdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\obj\\",
+        "outputPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\itzdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -135,8 +127,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj": {
-                "projectPath": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj"
+              "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj": {
+                "projectPath": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner.Client\\TripPlanner.Client.csproj"
               }
             }
           }
@@ -180,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

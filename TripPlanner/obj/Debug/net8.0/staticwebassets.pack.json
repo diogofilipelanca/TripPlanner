@@ -1,39 +1,39 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TripPlanner.bundle.scp.css",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TripPlanner.bundle.scp.css",
       "PackagePath": "staticwebassets\\TripPlanner.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\app.css",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\icons\\construcao-da-cidade.png",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\icons\\construcao-da-cidade.png",
       "PackagePath": "staticwebassets\\icons\\construcao-da-cidade.png"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\icons\\destino.png",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\icons\\destino.png",
       "PackagePath": "staticwebassets\\icons\\destino.png"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\icons\\mapa-da-cidade.png",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\icons\\mapa-da-cidade.png",
       "PackagePath": "staticwebassets\\icons\\mapa-da-cidade.png"
     },
     {
-      "Id": "C:\\Users\\itzdi\\Desktop\\TripPlanner\\TripPlanner\\wwwroot\\js\\graphs.js",
+      "Id": "C:\\Users\\itzdi\\Desktop\\Projetos\\TripPlanner\\TripPlanner\\TripPlanner\\wwwroot\\js\\graphs.js",
       "PackagePath": "staticwebassets\\js\\graphs.js"
     },
     {

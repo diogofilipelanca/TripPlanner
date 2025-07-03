@@ -1,15 +1,15 @@
 {
   "mainAssemblyName": "TripPlanner.Client",
   "resources": {
-    "hash": "sha256-YoO7ClKNPuMTLJklB1uokgPExnhvuauGWk15K6KrVMw=",
+    "hash": "sha256-cWDb8sf5xJxXpVGzcaNFOjS4xUO3F/RVUdEuL7NCMjA=",
     "jsModuleNative": {
-      "dotnet.native.8.0.10.vmrvi8wu0y.js": "sha256-QVxMlY7ohmjgde/bZMA0dlWDAeuUP+tEfkiSdg4DFcE="
+      "dotnet.native.8.0.8.qvb69b2oc3.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.10.o7ja6xip1l.js": "sha256-FjrgL9dY6dc2yUoXDWowSfachSgM8O29qUMWDQOJKRI="
+      "dotnet.runtime.8.0.8.f3sfo8yoco.js": "sha256-0Dpj/NkVD5WqSC16ZvJLmlc38iv9+Je+umYBVOycPVU="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-4ymhDbG5daKbi9yL1L574jRRiFFQhiOrDJU5YAYALU4="
+      "dotnet.native.wasm": "sha256-OcUTcd7qQceenWEF93409WZcaXp2qQbEyhdchog4RUE="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -213,10 +213,10 @@
       "mscorlib.wasm": "sha256-KvqZaNpjwhrOuzE4b4aMFsI+VUTyiWfoDI4zn4l9BM8=",
       "netstandard.wasm": "sha256-v+s7sWxtOM6bnOvC0jFrtnm6uMfbDymwl2nHNgbS2LM=",
       "System.Private.CoreLib.wasm": "sha256-pklll63uFQoY6vaD3vbluS9osYiJWLLLmob1yHFgepI=",
-      "TripPlanner.Client.wasm": "sha256-/B9nScgY0H8540aIwbS8SWzVCuEicYMPTirbXosH2aw="
+      "TripPlanner.Client.wasm": "sha256-UNMipmqkF/0BnZLAwzz66PopkKkvXoaS+vWvrqQmbeQ="
     },
     "pdb": {
-      "TripPlanner.Client.pdb": "sha256-AM6cnfqMd+6A9PLuj7U5/yPiVqLz7+4XEV3QIHxLk78="
+      "TripPlanner.Client.pdb": "sha256-yPBRtWwZ7lDPlfkPKUX+5YVWgRvc6aDfyLF3Ys9kHJc="
     }
   },
   "cacheBootResources": true,
