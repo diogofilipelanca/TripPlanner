@@ -4,7 +4,7 @@
 @attribute [Route(PageRoutes.Planner)]
 @rendermode InteractiveAuto
 
-<h3>Planner</h3>
+<h3>Planeador de Viagens</h3>
 <div style="margin-bottom: 20px">
     <RadzenTemplateForm TItem="@Optimize" Data="@Optimize" Submit="@OnSubmit">
         <RadzenRow AlignItems="AlignItems.Center">
@@ -20,8 +20,8 @@
         </RadzenRow>
         <RadzenRow AlignItems="AlignItems.Center">
             <div style="margin-top: 10px">
-                <RadzenButton ButtonType="@ButtonType.Submit" Text="Submit" />
-                <RadzenButton ButtonType="@ButtonType.Reset" Text="Reset" Click="@ResetFields" />
+                <RadzenButton ButtonType="@ButtonType.Submit" Text="Submeter" />
+                <RadzenButton ButtonType="@ButtonType.Reset" Text="Resetar" Click="@ResetFields" />
             </div>
         </RadzenRow>
     </RadzenTemplateForm>

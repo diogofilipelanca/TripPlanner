@@ -3,19 +3,19 @@
 @attribute [Route(PageRoutes.TripsList)]
 @rendermode InteractiveAuto
 
-<h3>TripsList</h3>
+<h3>Viagens</h3>
 
-<RadzenButton Click="@AddTrip">Add Trip</RadzenButton>
+<RadzenButton Click="@AddTrip">Adicionar Viagem</RadzenButton>
 
 <RadzenDataGrid Data="@trips">
     <Columns>
-        <RadzenDataGridColumn Property="@nameof(Trip.Origin)" Title="Origin" />
-        <RadzenDataGridColumn Property="@nameof(Trip.Destination)" Title="Destination" />
-        <RadzenDataGridColumn Property="@nameof(Trip.TypeTransport)" Title="Transport" />
-        <RadzenDataGridColumn Property="@nameof(Trip.Time)" Title="Time" />
-        <RadzenDataGridColumn Property="@nameof(Trip.Price)" Title="Price" />
-        <RadzenDataGridColumn Property="@nameof(Trip.Emissions)" Title="Emissions" />
-        <RadzenDataGridColumn Context="trip" Width="150px" Title="Actions">
+        <RadzenDataGridColumn Property="@nameof(Trip.Origin)" Title="Origem" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Destination)" Title="Destino" />
+        <RadzenDataGridColumn Property="@nameof(Trip.TypeTransport)" Title="Transporte" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Time)" Title="Tempo" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Price)" Title="Preco" />
+        <RadzenDataGridColumn Property="@nameof(Trip.Emissions)" Title="Emissoes" />
+        <RadzenDataGridColumn Context="trip" Width="150px" Title="Ações">
             <Template Context="trip">
                 <RadzenButton Icon="edit"
                               ButtonStyle="ButtonStyle.Secondary"

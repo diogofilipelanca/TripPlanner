@@ -5,30 +5,30 @@
 @attribute [Route($"{PageRoutes.TripsEdit}/{{Id}}")]
 @rendermode InteractiveAuto
 
-<h3>TripsEdit.razor</h3>
+<h3>Viagem</h3>
 
 <RadzenTemplateForm TItem="@Trip" Data="@trip" Submit="@OnSubmit">
     <RadzenRow AlignItems="AlignItems.Center">
-        <RadzenFormField Text="Origin">
+        <RadzenFormField Text="Origem">
             <RadzenDropDown Data="@cities" @bind-Value="@trip.Origin" TValue="string" ValueProperty="Name" TextProperty="Name" />
         </RadzenFormField>
-        <RadzenFormField Text="Destination">
+        <RadzenFormField Text="Destino">
             <RadzenDropDown Data="@cities" @bind-Value="@trip.Destination" TValue="string" ValueProperty="Name" TextProperty="Name" />
         </RadzenFormField>
-        <RadzenFormField Text="Transport">
+        <RadzenFormField Text="Transporte">
             <RadzenDropDown Data="Enum.GetNames(typeof(TypeTransport))" @bind-Value="@trip.TypeTransport" />
         </RadzenFormField>
-        <RadzenFormField Text="Time">
+        <RadzenFormField Text="Tempo">
             <RadzenNumeric @bind-Value="@trip.Time" />
         </RadzenFormField>
-        <RadzenFormField Text="Price">
+        <RadzenFormField Text="Preco">
             <RadzenNumeric @bind-Value="@trip.Price" />
         </RadzenFormField>
-        <RadzenFormField Text="Emissions">
+        <RadzenFormField Text="Emissoes">
             <RadzenNumeric @bind-Value="@trip.Emissions" />
         </RadzenFormField>
     </RadzenRow>
     <RadzenRow AlignItems="AlignItems.Center">
-        <RadzenButton ButtonType="@ButtonType.Submit" Text="Submit" />
+        <RadzenButton ButtonType="@ButtonType.Submit" Text="Submeter" />
     </RadzenRow>
 </RadzenTemplateForm>

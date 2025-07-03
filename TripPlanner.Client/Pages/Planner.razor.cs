@@ -205,7 +205,7 @@ namespace TripPlanner.Client.Pages {
 
             if (trip.Count() != 0) {
                 OptimizedTrip = trip;
-                await dialogService.OpenAsync<OptimizedTripDetails>($"{Optimize.Origin} até {Optimize.Destination}", new Dictionary<string, object> { { "trips", OptimizedTrip } });
+                await dialogService.OpenAsync<OptimizedTripDetails>($"{Optimize.Origin} até {Optimize.Destination}", new Dictionary<string, object> { { "trips", OptimizedTrip }, { "optimization", Optimize.OptimizeField} });
             } else {
                 ShowNotification(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error Summary", Detail = "Não foi possível encontrar um caminho até esse Destino", Duration = 3000 });
             }

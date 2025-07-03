@@ -3,14 +3,14 @@
 @attribute [Route(PageRoutes.CitiesList)]
 @rendermode InteractiveAuto
 
-<h3>CitiesList</h3>
+<h3>Cidades</h3>
 
-<RadzenButton Click="@AddCity">Add City</RadzenButton>
+<RadzenButton Click="@AddCity">Adicionar Cidade</RadzenButton>
 
 <RadzenDataGrid Data="@cities" @ref="Grid">
     <Columns>
-        <RadzenDataGridColumn Property="@nameof(City.Name)" Title="Name" />
-        <RadzenDataGridColumn Context="city" Width="150px" Title="Actions">
+        <RadzenDataGridColumn Property="@nameof(City.Name)" Title="Nome" />
+        <RadzenDataGridColumn Context="city" Width="150px" Title="Ações">
             <Template Context="city">
                 <RadzenButton Icon="edit"
                               ButtonStyle="ButtonStyle.Secondary"

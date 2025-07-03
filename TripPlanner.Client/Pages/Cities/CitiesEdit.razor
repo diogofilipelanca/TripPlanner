@@ -4,15 +4,15 @@
 @attribute [Route($"{PageRoutes.CitiesEdit}/{{Name}}")]
 @rendermode InteractiveAuto
 
-<h3>CitiesEdit</h3>
+<h3>Cidade</h3>
 
 <RadzenTemplateForm TItem="@City" Data="@city" Submit="@OnSubmit">
     <RadzenRow AlignItems="AlignItems.Center">
-        <RadzenFormField Text="City Name">
+        <RadzenFormField Text="Nome da Cidade">
             <RadzenTextBox @bind-Value="@city.Name" />
         </RadzenFormField>
     </RadzenRow>
     <RadzenRow AlignItems="AlignItems.Center">
-        <RadzenButton ButtonType="@ButtonType.Submit" Text="Submit" />
+        <RadzenButton ButtonType="@ButtonType.Submit" Text="Submeter" />
     </RadzenRow>
 </RadzenTemplateForm>

@@ -8,8 +8,7 @@
         public enum OptimizeField {
             Tempo,
             Custo,
-            Emissao,
-            Distance
+            Emissao
         }
         public enum PageModes {
             View,

@@ -13,43 +13,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = TripPlanner.Client
 build_property.RootNamespace = TripPlanner.Client
-build_property.ProjectDir = C:\Users\itzdi\Desktop\Projetos\TripPlanner\TripPlanner\TripPlanner.Client\
+build_property.ProjectDir = C:\Users\itzdi\Desktop\TripPlanner\TripPlanner.Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\itzdi\Desktop\Projetos\TripPlanner\TripPlanner\TripPlanner.Client
+build_property.MSBuildProjectDirectory = C:\Users\itzdi\Desktop\TripPlanner\TripPlanner.Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Components/NodesDialog.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/Components/NodesDialog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOb2Rlc0RpYWxvZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Components/OptimizedTripDetails.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/Components/OptimizedTripDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xPcHRpbWl6ZWRUcmlwRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Pages/Cities/CitiesEdit.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/Pages/Cities/CitiesEdit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2l0aWVzXENpdGllc0VkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Pages/Cities/CitiesList.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/Pages/Cities/CitiesList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2l0aWVzXENpdGllc0xpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Pages/Planner.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/Pages/Planner.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhbm5lci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Pages/Trips/TripsEdit.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/Pages/Trips/TripsEdit.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJpcHNcVHJpcHNFZGl0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/Pages/Trips/TripsList.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/Pages/Trips/TripsList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJpcHNcVHJpcHNMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/itzdi/Desktop/Projetos/TripPlanner/TripPlanner/TripPlanner.Client/_Imports.razor]
+[C:/Users/itzdi/Desktop/TripPlanner/TripPlanner.Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
